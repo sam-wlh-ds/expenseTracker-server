@@ -8,7 +8,7 @@ const tranData = require("../controllers/tranData")
 const addData = require("../controllers/addData")
 const clearData = require("../controllers/clearData")
 const deleteUser = require("../controllers/deleteUser")
-
+const updateUsername = require("../controllers/updateUsername");
 
 const router = express.Router();
 
@@ -20,5 +20,6 @@ router.post("/tranData", auth, tranData);
 router.post("/addData", auth, addData);
 router.post("/clearData", auth, clearData);
 router.post("/deleteUser", auth, deleteUser);
+router.post("/updateUsername", auth, updateUsername);
 
 module.exports = router;
