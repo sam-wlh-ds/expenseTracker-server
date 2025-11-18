@@ -8,7 +8,7 @@ const tranData = require("../controllers/tranData")
 const addData = require("../controllers/addData")
 const clearData = require("../controllers/clearData")
 const deleteUser = require("../controllers/deleteUser")
-const updateUsername = require("../controllers/updateUsername");
+const updateUsername = require("../controllers/updateData");
 
 const router = express.Router();
 
