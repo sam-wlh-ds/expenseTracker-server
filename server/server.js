@@ -9,12 +9,16 @@ const app = express();
 const PORT = process.env.PORT || 5000; // Ensure you have a fallback port
 
 // Configure CORS
-app.use(
-  cors({
-    origin: process.env.CLIENT,
-    credentials: true, // Allow cookies or other credentials
-  })
-);
+// app.use(
+//   cors({
+//     origin: process.env.CLIENT,
+//     credentials: true, // Allow cookies or other credentials
+//   })
+// );
+app.use(cors({
+  origin: '*',
+  credentials: true
+}));
 
 // Middleware
 app.use(express.json());
